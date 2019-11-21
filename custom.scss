@@ -1,0 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
+
+$font-size-base:              5rem;
+$font-size-lg:                $font-size-base * 3;
+$font-size-sm:                $font-size-base * .875;
+
+
+// Jumbotron
+
+$jumbotron-padding: 10rem;
+$jumbotron-color: #343a40;
+$jumbotron-bg: #343a40;
+
+
+
+@import "bootstrap-4.3.1/bootstrap-4.3.1/scss/bootstrap";
