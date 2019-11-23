@@ -5,9 +5,8 @@ body {
 body {background-color: black;}
 
 .display-4 {
-	font-family:roboto;
-	font-style:black;
-	font-size:72px;
+	font-family:Arial Black;
+	font-size:50px;
 }
 .lead {
 	color: #ffffff;
@@ -26,6 +25,7 @@ p {
 .jumbotron{
 	background-image: url("Site-Header.png");
     background-size: cover;
+    padding: 10em inherit;
 
 }
 
@@ -35,12 +35,15 @@ p {
 }
 
 
+
+ /* navbar*/
+
 .nav-link {
-	font-family:roboto;
+	font-family:sans-serif;
 	font-size:black;
 	font-size:20px;
 	padding: 14px 16px;
-	float: right;
+	
 }
 
 
@@ -56,3 +59,7 @@ p {
   padding: 50px 40px !important;
 }
 
+.navbar-nav > li{
+  padding-left:30px;
+  padding-right:30px;
+}
