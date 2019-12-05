@@ -99,7 +99,7 @@ var mapZoom = 12.95;
     map.on('click', function(e) {   // Event listener to do some code when user clicks on the map
 
       var stops = map.queryRenderedFeatures(e.point, {  // Query the map at the clicked point. See https://www.mapbox.com/mapbox-gl-js/example/queryrenderedfeatures/ for an example on how queryRenderedFeatures works and https://www.mapbox.com/mapbox-gl-js/api/#map#queryrenderedfeatures for documentation
-        layers: ['cville-bus-stops']    // replace this with the name of the layer from the Mapbox Studio layers panel
+        layers: ['cannabis-farm']    // replace this with the name of the layer from the Mapbox Studio layers panel
     });
 
       // if the layer is empty, this if statement will exit the function (no popups created) -- this is a failsafe to avoid non-functioning popups
@@ -133,6 +133,26 @@ var mapZoom = 12.95;
 
 
 // -------------------------------------------------------- 
+
+
+map.on('click', function(e) {
+  var features = map.queryRenderedFeatures(e.point, {
+    layers: ['cannabis-farm'] // replace this with the name of the layer
+  });
+
+  if (!features.length) {
+    return;
+  }
+
+  var feature = features[0];
+
+  var popup = new mapboxgl.Popup({ offset: [0, -15] })
+    .setLngLat(feature.geometry.coordinates)
+    .setHTML('<h3>' + feature.properties.title + '</h3><p>' + feature.properties.description + '</p>')
+    .addTo(map);
+});
+
+
 // 6. Show/hide layers
 // See example at https://www.mapbox.com/mapbox-gl-js/example/toggle-layers/
     
@@ -141,11 +161,11 @@ var mapZoom = 12.95;
         // [layerMachineName, layerDisplayName]
         // layerMachineName is the layer name as written in your Mapbox Studio map layers panel
         // layerDisplayName is the way you want the layer's name to appear in the layers control on the website
-        ['cville-bus-stops', 'Cannabis Farming'],                      // layers[0]
-        ['cville-parks', 'Therapy Center'],                              // layers[1][1] = 'Parks'
-        ['cville-bike-lanes', 'Job Training Center'],     
-        ['cville-bus-stops-heatmap', 'Cannabis Farming Heatmap'],
-        ['background', 'Map background']
+        ['cannabis-farm', 'Cannabis Farming'],                      // layers[0]
+        ['therapy', 'Therapy Center'],                              // layers[1][1] = 'Parks'
+        ['cjob', 'Job Training Center'],     
+        ['cannabis-farm 1', 'Cannabis Farming Heatmap'],
+       
         // add additional live data layers here as needed
     ]; 
 
