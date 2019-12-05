@@ -44,7 +44,7 @@ p .quote {
 }
 
 h3 {
-	color: #f80f87;
+	color: #d93075;
 	font-size: 30px;
 	font-family: roboto;
 	font-style: thin;
@@ -58,6 +58,16 @@ h3 {
     padding: 10em inherit;
 
 }
+
+
+.jumbotron-main{
+	background-image: url("ASLA/Marijuana Justice_15.Harvest Season.jpg");
+    background-size: cover;
+    height:800px;
+
+}
+
+
 
 .btn {
 	background-color:#F3209E;
