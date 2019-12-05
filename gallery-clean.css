@@ -6,9 +6,9 @@ body {
 
 .gallery-container h1 {
     text-align: center;
-    margin-top: 70px;
+    margin-top: 60px;
     font-family: 'Droid Sans', sans-serif;
-    font-weight: bold;
+    font-weight: thin;
     color: #fff;
 }
 
@@ -35,7 +35,7 @@ body {
     width: 100%;
     margin-bottom: 10px;
     transition: 0.2s ease-in-out;
-    box-shadow: 0 3px 3px #e23c9a;
+    box-shadow: 0 3px 3px #ff73cc;
 }
 
 

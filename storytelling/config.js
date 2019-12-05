@@ -15,10 +15,10 @@ var config = {
             image: 'homeless encampment.jpg',
             description: 'According to the 2019 Alameda County Homeless Count, Oakland’s homeless residents made up 52.7% of Alameda County’s total homeless population, grew to a total of 3,451 residents. An estimated 68% of Oakland’s homeless residents were Black or African American, despite Black residents only composing 26% of the overall City population. Housing and mental illness are two most significant reasons why people become homeless. ',
             location: {
-                center: [-122.418398, 37.759483],
-                zoom: 13.5,
-                pitch: 60,
-                bearing: 0
+                center: [-122.274, 37.814],
+                zoom: 18,
+                pitch: 70,
+                bearing: 5
             },
             onChapterEnter: [
                 // {
