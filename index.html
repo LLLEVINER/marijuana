@@ -49,13 +49,12 @@
           What We Do
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="index_WhatWeDo.html">Spring</a>
+          <a class="dropdown-item" href="index_WhatWeDo_Community.html">Community Project</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="index_WhatWeDo.html">Summer</a>
+          <a class="dropdown-item" href="index_WhatWeDo_Lab.html">Cannabis Lab</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="index_WhatWeDo.html">Fall</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="index_WhatWeDo.html">Winter</a>
+          <a class="dropdown-item" href="index_WhatWeDo_Atlas.html">Atlas Gallery</a>
+          
         </div>
       
 
@@ -136,12 +135,12 @@
       <div class="row featurette">
         <div class="col-md-7">
           <h2 class="featurette-heading">"My enlightenment level is elevated spiritually"</h2>
-           <p id="grow_text_a" class="lead">I'm Bob Slanson, I used to live in St.Vincent Homeless Shelter near San Pablo Ave.</p><h4>Click to see my story>>>>>></h4>
+           <p id="grow_text_a" class="lead">I'm Bob Slanson, I used to live in St.Vincent Homeless Shelter near San Pablo Ave.</p><h4 id="grow_click"> Click to view my story > </h4>
           <p id="grow_text" class="lead">I thank Marijuana Justice for helping me grow. If you ever have the opportunity to work for Marijuana Justice, take it - it's a great experience and you'll grow too.<br /> -Marijuana Justice Cannabis Farmhand Bob</</p>
          
         </div>
         <div class="col-md-5">
-          <img id="growing" class="featurette-image img-fluid mx-auto" src="ASLA/Marijuana Justice_13.Growing Season.jpg" alt="Generic placeholder image">
+          <img id="growing" class="featurette-image img-fluid mx-auto" src="ASLA/Marijuana Justice_13.Growing Season-01.jpg" alt="Generic placeholder image">
         </div>
       </div>
 
@@ -150,11 +149,11 @@
       <div class="row featurette">
         
         <div class="col-md-5 ">
-          <img id="therapy" class="featurette-image img-fluid mx-auto" src="ASLA/Marijuana Justice_15.Harvest Season.jpg" alt="Generic placeholder image">
+          <img id="therapy" class="featurette-image img-fluid mx-auto" src="ASLA/Marijuana Justice_15.Harvest Season-01.jpg" alt="Generic placeholder image">
         </div>
         <div class="col-md-7 ">
           <h2 class="featurette-heading">"Now I don't ruminate, I meditate." </h2>
-          <p id="grow_text_a" class="lead">Hey, it's Charlie. I have been suffering from bipolar for years. I am one of the CityTeam Oakland Homeless Aid Program</p><h4> Click to view my story<<<<<<<<</h4>
+          <p id="grow_text_a" class="lead">Hey, it's Charlie. I have been suffering from bipolar for years. I am one of the CityTeam Oakland Homeless Aid Program</p><h4 id="therapy_click"> Click to view my story <</h4>
           <p class="lead" id="therapy_text">When I am at the farm. It's almost like going to the ocean, and you got a ton of problems, and you look out at the ocean and they all melt away."<br>-Marijuana Justice Farmhand Charlie</p>
          
 
@@ -167,7 +166,7 @@
       <div class="row featurette">
         <div class="col-md-7">
           <h2 class="featurette-heading">"I come out here like a bouncing ball.I leave like a floating balloon at peace."
-          <p id="grow_text_a" class="lead">Hey, it's Jayne. I lived in Homeless Encampment under I-980.</p> <h4> Click to view my story>>>>>></h4>
+          <p id="grow_text_a" class="lead">Hey, it's Jayne. I lived in Homeless Encampment under I-980.</p> <h4 id="job_click"> Click to view my story ></h4>
 
           <p id="job_text" class="lead">“Marijuana Justice helped me regain my independence and indignity. I am a wholehearted believer in the healing power of nature. ” </br>— Jayne Torres</p>
          
@@ -248,9 +247,15 @@ $('#grow_text').hide();
 $('#growing').on( 'click', function() {
     $('#grow_text').toggle(700);
   });
+$('#grow_click').on( 'click', function() {
+    $('#grow_text').toggle(700);
+  });
 
 $('#therapy_text').hide();
 $('#therapy').on( 'click', function() {
+    $('#therapy_text').toggle(700);
+  });
+$('#therapy_click').on( 'click', function() {
     $('#therapy_text').toggle(700);
   });
 
@@ -258,6 +263,11 @@ $('#job_text').hide();
 $('#job').on( 'click', function() {
     $('#job_text').toggle(700);
   });
+$('#job_click').on( 'click', function() {
+    $('#job_text').toggle(700);
+  });
+
+
 
 </script>
    
