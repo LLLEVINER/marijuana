@@ -26,6 +26,10 @@ h4 {
 	color: #ffffff;
 	font-style: thin;
 }
+
+.pink {
+	color: #ed1293;
+}
 h2 {
 	color: #ffffff;
 	font-style: bold;
@@ -40,7 +44,7 @@ p .quote {
 }
 
 h3 {
-	color: #ec1b97;
+	color: #e51ea1;
 	font-size: 30px;
 	font-family: roboto;
 	font-style: thin;
@@ -99,6 +103,12 @@ h3 {
   font-weight: normal;
 }
 .container-fluid .col p {
+  margin-right: 8rem;
+  margin-left: 8rem;
+}
+
+.container-image  {
+  padding:40px;
   margin-right: 8rem;
   margin-left: 8rem;
 }
@@ -162,7 +172,11 @@ h3 {
 
 /* Gallery
 ------------------------- */
-
+.navbar-expand-lg .navbar-dark .bg-dark{
+background-color:#ffffff;
+color:#ffffff;
+	opacity: 80%;
+}
 
 
 
