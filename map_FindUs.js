@@ -1,6 +1,6 @@
 // Global variables
-var mapCenter = [-122.267110, 37.799160];
-var mapZoom = 12.95;
+var mapCenter = [-122.273, 37.805];
+var mapZoom = 13.5;
 
 
 // --------------------------------------------------------
@@ -36,22 +36,21 @@ var mapZoom = 12.95;
 // See example tutorial at https://docs.mapbox.com/help/tutorials/choropleth-studio-gl-pt-2/#create-arrays-of-intervals-and-colors
 
     var layers = [ // an array of the possible values you want to show in your legend
-        'Civic Spaces', // Civic Spaces.png
-        'Community Park', // Community Park.png
-        'Neighborhood Park', // Neighborhood Park.png
-        'Cemetery',
-        'Urban Park',
-        'Regional Park'
+        'Cannabis Farming', // Civic Spaces.png
+        'Therapy Center', // Community Park.png
+        'Job Training Center'// Neighborhood Park.png
+       
     ];
 
     var colors = [ // an array of the color values for each legend item
-        '#800000',
-        '#800030',
-        '#800060',
-        '#80006c',
-        '#800090',
-        '#80009c'
+        '#cb105c',
+        '#cb105c',
+        '#cb105c'
+        
     ];
+    
+
+     
 
     // for loop to create individual legend items
     for (i=0; i<layers.length; i++) {
@@ -163,8 +162,8 @@ map.on('click', function(e) {
         // layerDisplayName is the way you want the layer's name to appear in the layers control on the website
         ['cannabis-farm', 'Cannabis Farming'],                      // layers[0]
         ['therapy', 'Therapy Center'],                              // layers[1][1] = 'Parks'
-        ['cjob', 'Job Training Center'],     
-        ['cannabis-farm 1', 'Cannabis Farming Heatmap'],
+        ['job', 'Job Training Center'],     
+        ['cannabis-farm1', 'Cannabis Farming Heatmap'],
        
         // add additional live data layers here as needed
     ]; 
@@ -201,30 +200,7 @@ map.on('click', function(e) {
     });
 
 // -------------------------------------------------------- 
-// 7. Change a layer's style
-// See example at https://www.mapbox.com/mapbox-gl-js/example/color-switcher/
-    
-    var swatches = $("#swatches");
-
-    var colors = [  // an array of color options for the bus stop ponts
-        '#ffd000',
-        '#f00',
-    ]; 
-
-    var layer = 'cville-bus-stops';
-
-    colors.forEach(function(color) {
-        var swatch = $("<button class='swatch'></button>").appendTo(swatches);
-
-        $(swatch).css('background-color', color); 
-
-        $(swatch).on('click', function() {
-            map.setPaintProperty(layer, 'circle-color', color); // 'circle-color' is a property specific to a circle layer. Read more about what values to use for different style properties and different types of layers at https://www.mapbox.com/mapbox-gl-js/style-spec/#layers
-        });
-
-        $(swatches).append(swatch);
-    });
-
+//
 // -------------------------------------------------------- 
 // 8. Scroll to zoom through sites
 // See example at https://docs.mapbox.com/mapbox-gl-js/example/scroll-fly-to/

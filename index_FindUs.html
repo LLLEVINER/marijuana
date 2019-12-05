@@ -5,7 +5,7 @@
 
   <!-- Link to JQuery library (used for modal) -->  
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  
+
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
@@ -124,18 +124,13 @@
       </div>
 
       <!-- color change selector -->
-      <div id='color-changer'>
-        <div>
-          <label>Bus Stop Color:</label>
-          <div id='swatches'></div>
-        </div>
-      </div>
+      
 
-      <!-- Map legend (populated by javascript code) -->
-      <div id='legend'></div>
-
+      
       <!-- Reset Map button -->
       <button id="reset" class='button-default'><i class="fas fa-redo"></i></i>&nbsp;Reset map</button>
+      <!-- Map legend (populated by javascript code) -->
+      
     </div>
   </div>
 
@@ -149,6 +144,10 @@
     <button class='close-button'>&times;</button>  <!-- A special "x" character (the multiply sign) used in close buttons -->  
   </div>
   <div id="screen"></div> <!-- Black overlay behind the modal -->
+
+
+
+
 
 </body>
 <!-- Link to our custom javascript, must be placed at the end of the index.html file -->  
